@@ -1,0 +1,7 @@
+file ./libmyrand.so
+
+size ./libmyrand.so
+
+nm   ./libmyrand.so
+
+nm   ./libmyrand.so | grep " T "

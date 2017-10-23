@@ -1,0 +1,11 @@
+ar -t libmyrand.a   			# look content of static lib
+
+ar -d libmyrand.a initapi.o   	# delete initapi.o from libmyrand.a
+ar -t libmyrand.a 				# look content of static lib
+
+or
+ar -dv libmyrand.a initapi.o 	# delete initapi.o from libmyrand.a within warn informations.
+
+
+
+ar -xv libmyrand.a initapi.o 	# extrace initapi.o from libmyrand.o within warning informations.
