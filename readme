@@ -1,2 +1,35 @@
 please add directory for project!
 
+<.......................................................>
+git init
+
+git config --global user.name "YourName"
+git config --global user.email "YourEmail"
+
+git status
+git rebase
+
+git status
+git add file1 file2 ...
+git status
+git commit -m 'devel/fix: ***'
+git push -u origin mastar
+
+<.......................................................>
+create new project repo:
+1. login github.com
+2. hit "Repositories"
+3. Input New Project Name
+4. select "Public"
+5. select "Initialize this repository with a README"
+6. hit "Create repository"
+
+7. local:
+7.1 Create New Directory
+7.2 git init
+7.3 git add [the code file] file1 file2 ...
+7.4 git commit -m 'devel: ***'
+7.5 git pull https://github.com/Youraccout/YourProject.git
+7.6 git remote add origin https://github.com/Youraccout/YourProject.git
+7.7 git push -u origin master
+<.......................................................>
