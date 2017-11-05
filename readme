@@ -33,3 +33,10 @@ create new project repo:
 7.6 git remote add origin https://github.com/Youraccout/YourProject.git
 7.7 git push -u origin master
 <.......................................................>
+Encrypto:
+tar -cvzf - Directory | openssl des3 -salt -out *.tar.gz
+
+Decrypto:
+openssl des3 -d -salt -in *.tar.gz | tar -xvzf -
+<.......................................................>
+
