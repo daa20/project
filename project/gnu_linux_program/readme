@@ -4,3 +4,4 @@ strucout 		----> read different format strings, and input into txt.
 strucin 		----> read different from txt by different format, and input into terminal.
 binout 			----> fwrite function.
 binin 			----> fread function.
+dup2 			----> pipe, fork & dup2 function.
