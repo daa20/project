@@ -5,3 +5,4 @@ strucin 		----> read different from txt by different format, and input into term
 binout 			----> fwrite function.
 binin 			----> fread function.
 dup2 			----> pipe, fork & dup2 function.
+mkfifo 			----> mkfifo function.
