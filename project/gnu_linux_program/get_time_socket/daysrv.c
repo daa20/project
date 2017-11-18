@@ -14,6 +14,8 @@ main(int argc, char *argv[])
     int server_fd;
     int connect_fd;
     struct sockaddr_in server_addr;
+    struct sockaddr_in client_addr;
+    int client_addr_len = sizeof(struct sockaddr_in);
     char time_buffer[MAX_BUFFER + 1] = {};
     time_t current_time;
     
@@ -45,10 +47,17 @@ main(int argc, char *argv[])
 
     while (1) {
         /*4. wait for accepting a connection. */
-        connect_fd = accept(server_fd, (struct sockaddr *)NULL, NULL);
+        //connect_fd = accept(server_fd, (struct sockaddr *)NULL, NULL);
+        connect_fd = accept(server_fd, (struct sockaddr *)&client_addr,
+                (socklen_t *)&client_addr_len);
         if (connect_fd >= 0) {
             current_time = time(NULL);
+            sleep(1);
+            fprintf(stdout, "From: ");
             snprintf(time_buffer, MAX_BUFFER, "%s\n", ctime(&current_time));
+            fprintf(stdout, "%s[port: %d]\n", inet_ntoa(client_addr.sin_addr),
+                    client_addr.sin_port);
+
             write(connect_fd, time_buffer, strlen(time_buffer));
             close(connect_fd);
         }
