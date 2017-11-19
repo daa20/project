@@ -7,3 +7,6 @@ binin 			----> fread function.
 dup2 			----> pipe, fork & dup2 function.
 mkfifo 			----> mkfifo function.
 gettime socket  ----> socket function.
+process         ----> getpid functions.
+smplfork        ----> fork functions.
+sigcatch        ----> signal functions.
