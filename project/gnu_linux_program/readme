@@ -10,3 +10,4 @@ gettime socket  ----> socket function.
 process         ----> getpid functions.
 smplfork        ----> fork functions.
 sigcatch        ----> signal functions.
+kill_ppid       ----> fork() signal() and kill()  functions.
