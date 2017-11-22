@@ -11,3 +11,6 @@ process         ----> getpid functions.
 smplfork        ----> fork functions.
 sigcatch        ----> signal functions.
 kill_ppid       ----> fork() signal() and kill()  functions.
+simpshell       ----> execlp() functions.
+alarm           ----> alarm() functions.
+posixsig        ----> POSIX - sigaction() functions.
