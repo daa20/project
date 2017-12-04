@@ -15,3 +15,5 @@ simpshell       ----> execlp() functions.
 alarm           ----> alarm() functions.
 posixsig        ----> POSIX - sigaction() functions.
 pthread_create  ----> pthread_create() functions.
+pthread_detach  ----> pthread_detach() functions.
+pthread_mutex  	----> pthread_mutex_lock(), pthread_mutex_unlock() functions.
