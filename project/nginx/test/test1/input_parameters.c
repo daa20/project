@@ -43,7 +43,10 @@ tst_show_version_info(void)
     fprintf(stdout, "TST version: %s\n", TST_VERSION);
 
     if (tst_show_help == 1) {
-    
+        fprintf(stdout, "Usage: input_parameters.bin [-?hv] [-c filename] \n" \
+                " -?, -h        : this help.\n" \
+                "-v             : show version and exit.\n" \
+                "-c filename    : set configuration file\n"); 
     }
 
     if (tst_show_configure == 1) {
