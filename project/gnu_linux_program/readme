@@ -17,3 +17,4 @@ posixsig        ----> POSIX - sigaction() functions.
 pthread_create  ----> pthread_create() functions.
 pthread_detach  ----> pthread_detach() functions.
 pthread_mutex  	----> pthread_mutex_lock(), pthread_mutex_unlock() functions.
+pthread_cond  	----> pthread_mutex_lock(), pthread_mutex_unlock() pthread_cond_wait() functions.
