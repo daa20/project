@@ -19,3 +19,5 @@ pthread_detach  ----> pthread_detach() functions.
 pthread_mutex  	----> pthread_mutex_lock(), pthread_mutex_unlock() functions.
 pthread_cond  	----> pthread_mutex_lock(), pthread_mutex_unlock() pthread_cond_wait() functions.
 msg_ipc  		----> msgget(), msgctl(), msgsnd(), msgcrv() functions.
+sem_ipc  		----> semget(), semop(), semctl() functions.
+shm_ipc 		----> shmget(), shmat(), shmdt(), shmctl() functions.
