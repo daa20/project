@@ -34,6 +34,7 @@ main(int argc, char *const argv[])
 {
     int                 sock_fd = -1;
     int                 acpt_fd = -1;
+    int                 reuse_addr = 1;
     int                 ret = -1;
     int                 backlog = -1;
     char                ip[] = {};
@@ -54,6 +55,12 @@ main(int argc, char *const argv[])
         return -1;
     }
     
+    ret = setsockopt(sock_fd, SOL_SOCKET, SO_REUSEADDR, &reuse_addr, sizeof(reuse_addr));
+    if (ret != 0) {
+        fprintf(stderr, "setsockopt failed[%s]!\n", strerror(errno));
+        return -1;
+    }
+
     bzero(&server_addr, sizeof(server_addr));
     bzero(&client_addr, sizeof(client_addr));
     
