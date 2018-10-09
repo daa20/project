@@ -1,0 +1,24 @@
+test_1     virtual test
+test_2     & usage.
+test_3     c++ new & delete usage.
+test_4     namespace usage.
+test_5     const & volatile usage.
+test_6     class usage.
+test_7     Constructor usage.
+test_8     static usage in class.
+test_9     friend keyword usage in class.
+test_10    operator+ overload usage in class.
+test_11    operator=, [], ==, != overload usage in class.
+test_12    explicit usage in class.
+test_13    Singleton usage in class.
+test_14    inherit usage in class.
+test_15    overwrite(重写) usage in class.
+test_16    override（覆盖：多态） usage in class.
+test_17    override（抽象类： 纯虚函数） usage in class.
+test_18    override（多重继承： 接口类） usage in class.
+test_19    template usage.
+test_20    template usage in class(特化类).
+test_21    template usage (判断一个变量是否是指针).
+test_22    (异常处理 例子1).
+test_23    (异常处理 例子2).
+test_24    (利用多态进行动态类型识别).
